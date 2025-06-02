@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/64c8dc9960104086a3cb3527f49e676a/artifacts
+end_time: 1748863963571
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 64c8dc9960104086a3cb3527f49e676a
+run_name: abrasive-quail-206
+run_uuid: 64c8dc9960104086a3cb3527f49e676a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748863963506
+status: 3
+tags: []
+user_id: dhruv

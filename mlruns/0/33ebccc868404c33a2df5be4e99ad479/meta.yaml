@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/33ebccc868404c33a2df5be4e99ad479/artifacts
+end_time: 1748861051904
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 33ebccc868404c33a2df5be4e99ad479
+run_name: zealous-duck-230
+run_uuid: 33ebccc868404c33a2df5be4e99ad479
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748861051846
+status: 3
+tags: []
+user_id: dhruv

@@ -1,0 +1,8 @@
+The query "I heard it on a news channel" requires more context to be useful.  To find relevant cases, I need more information about what the user heard.  For example:
+
+* **What was the news story about?** (e.g., a crime, a political event, a natural disaster, a product recall)
+* **Which news channel?** (This helps narrow down the potential sources and biases)
+* **When did they hear it?** (A date or approximate timeframe)
+* **What specific details do they remember?** (Names, locations, key events)
+
+With more details, I can potentially help find relevant news articles, legal cases, or other information related to the user's query.

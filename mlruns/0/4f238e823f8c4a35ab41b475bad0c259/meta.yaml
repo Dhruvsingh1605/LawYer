@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/4f238e823f8c4a35ab41b475bad0c259/artifacts
+end_time: 1748860980165
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4f238e823f8c4a35ab41b475bad0c259
+run_name: kindly-worm-118
+run_uuid: 4f238e823f8c4a35ab41b475bad0c259
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748860980113
+status: 3
+tags: []
+user_id: dhruv

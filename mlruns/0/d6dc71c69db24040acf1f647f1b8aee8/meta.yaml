@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/d6dc71c69db24040acf1f647f1b8aee8/artifacts
+end_time: 1748861912406
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d6dc71c69db24040acf1f647f1b8aee8
+run_name: monumental-mare-427
+run_uuid: d6dc71c69db24040acf1f647f1b8aee8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748861912328
+status: 3
+tags: []
+user_id: dhruv

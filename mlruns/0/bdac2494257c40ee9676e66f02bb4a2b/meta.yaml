@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/bdac2494257c40ee9676e66f02bb4a2b/artifacts
+end_time: 1748860628709
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bdac2494257c40ee9676e66f02bb4a2b
+run_name: polite-hawk-595
+run_uuid: bdac2494257c40ee9676e66f02bb4a2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748860628645
+status: 3
+tags: []
+user_id: dhruv

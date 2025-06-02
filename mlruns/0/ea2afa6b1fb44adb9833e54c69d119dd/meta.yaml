@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/ea2afa6b1fb44adb9833e54c69d119dd/artifacts
+end_time: 1748861105937
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ea2afa6b1fb44adb9833e54c69d119dd
+run_name: traveling-rat-533
+run_uuid: ea2afa6b1fb44adb9833e54c69d119dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748861105853
+status: 3
+tags: []
+user_id: dhruv

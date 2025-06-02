@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/d25968f2c07c43c4b624515728d40705/artifacts
+end_time: 1748862009539
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d25968f2c07c43c4b624515728d40705
+run_name: gregarious-bird-619
+run_uuid: d25968f2c07c43c4b624515728d40705
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748862009442
+status: 3
+tags: []
+user_id: dhruv

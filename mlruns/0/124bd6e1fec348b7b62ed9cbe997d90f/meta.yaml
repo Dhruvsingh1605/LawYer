@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/124bd6e1fec348b7b62ed9cbe997d90f/artifacts
+end_time: 1748860892286
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 124bd6e1fec348b7b62ed9cbe997d90f
+run_name: secretive-carp-94
+run_uuid: 124bd6e1fec348b7b62ed9cbe997d90f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748860892213
+status: 3
+tags: []
+user_id: dhruv

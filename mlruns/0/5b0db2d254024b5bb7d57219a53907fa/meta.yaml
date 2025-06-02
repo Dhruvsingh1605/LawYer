@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/5b0db2d254024b5bb7d57219a53907fa/artifacts
+end_time: 1748860869693
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5b0db2d254024b5bb7d57219a53907fa
+run_name: debonair-gull-866
+run_uuid: 5b0db2d254024b5bb7d57219a53907fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748860869611
+status: 3
+tags: []
+user_id: dhruv

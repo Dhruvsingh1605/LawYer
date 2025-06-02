@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/0e5d59daea6c41889ff9b6cbeeb63bf8/artifacts
+end_time: 1748861034564
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0e5d59daea6c41889ff9b6cbeeb63bf8
+run_name: rumbling-yak-603
+run_uuid: 0e5d59daea6c41889ff9b6cbeeb63bf8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748861034514
+status: 3
+tags: []
+user_id: dhruv

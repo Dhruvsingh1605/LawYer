@@ -2,7 +2,6 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import json
-import time
 import logging
 from dotenv import load_dotenv
 import google.generativeai as genai
@@ -15,7 +14,11 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 logger = logging.getLogger(__name__)
 
+
 def fetch_cases_from_courtlistener(query, year=None, max_results=5):
+    token = os.getenv("COURTLISTENER_API_KEY")
+    if not token:
+        raise RuntimeError("COURTLISTENER_API_KEY is not set in your environment.")
     base_url = "https://www.courtlistener.com/api/rest/v3/opinions/"
     params = {
         "search": query["topic"],
@@ -23,13 +26,19 @@ def fetch_cases_from_courtlistener(query, year=None, max_results=5):
         "date_filed__gte": f"{year}-01-01" if year else "",
         "page_size": max_results
     }
-    headers = {"User-Agent": "LegalBot/1.0"}
+    headers = {
+        "User-Agent": "LegalBot/1.0",
+        "Authorization": f"Token {token}"
+    }
     resp = requests.get(base_url, params=params, headers=headers)
     resp.raise_for_status()
     return resp.json().get("results", [])
 
+
 def fetch_cases_from_cap(query, year=None, max_results=5):
     cap_api_key = os.getenv("CAP_API_KEY")
+    if not cap_api_key:
+        raise RuntimeError("CAP_API_KEY is not set in your environment.")
     base_url = "https://api.case.law/v1/cases/"
     params = {
         "search": query["topic"],
@@ -38,13 +47,18 @@ def fetch_cases_from_cap(query, year=None, max_results=5):
     }
     if year:
         params["decision_date_min"] = f"{year}-01-01"
-    headers = {"Authorization": f"Token {cap_api_key}"}
+    headers = {
+        "Authorization": f"Token {cap_api_key}"
+    }
     resp = requests.get(base_url, params=params, headers=headers)
     resp.raise_for_status()
     return resp.json().get("results", [])
 
+
 def fetch_cases_from_govinfo(query, year=None, max_results=5):
     gov_key = os.getenv("GOVINFO_API_KEY")
+    if not gov_key:
+        raise RuntimeError("GOVINFO_API_KEY is not set in your environment.")
     base_url = "https://api.govinfo.gov/collections/USCOURTS/"
     params = {
         "api_key": gov_key,
@@ -63,10 +77,12 @@ def fetch_cases_from_govinfo(query, year=None, max_results=5):
             filtered.append(pkg)
     return filtered
 
+
 def fetch_scarcity_scotus(query, year=None):
     # Example scraper for SCOTUS opinions (HTML index)
     scotus_index = "https://www.supremecourt.gov/opinions/slipopinion/22"
     resp = requests.get(scotus_index)
+    resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
     links = soup.select("table.tablegrid a")
     cases = []
@@ -77,13 +93,20 @@ def fetch_scarcity_scotus(query, year=None):
             cases.append({"case_name": title, "pdf_url": f"https://www.supremecourt.gov{href}"})
     return cases[:5]
 
+
 def retrieve_legal_documents(query, year=None, max_results=5):
     all_docs = []
+
     try:
         cl = fetch_cases_from_courtlistener(query, year, max_results)
         for doc in cl:
             text = doc.get("plain_text") or ""
-            all_docs.append({"source": "CourtListener", "id": doc.get("id"), "case_name": doc.get("case_name", ""), "text": text})
+            all_docs.append({
+                "source": "CourtListener",
+                "id": doc.get("id"),
+                "case_name": doc.get("case_name", ""),
+                "text": text
+            })
     except Exception as e:
         logger.error(f"Error fetching from CourtListener: {e}")
 
@@ -91,7 +114,12 @@ def retrieve_legal_documents(query, year=None, max_results=5):
         cap = fetch_cases_from_cap(query, year, max_results)
         for doc in cap:
             text = doc.get("decision_text") or ""
-            all_docs.append({"source": "CAP", "id": doc.get("id"), "case_name": doc.get("name", ""), "text": text})
+            all_docs.append({
+                "source": "CAP",
+                "id": doc.get("id"),
+                "case_name": doc.get("name", ""),
+                "text": text
+            })
     except Exception as e:
         logger.error(f"Error fetching from CAP: {e}")
 
@@ -99,18 +127,22 @@ def retrieve_legal_documents(query, year=None, max_results=5):
         gi = fetch_cases_from_govinfo(query, year, max_results)
         for pkg in gi:
             summary = pkg.get("summary", "")
-            all_docs.append({"source": "GovInfo", "id": pkg.get("package_id"), "case_name": pkg.get("title", ""), "text": summary})
+            all_docs.append({
+                "source": "GovInfo",
+                "id": pkg.get("package_id"),
+                "case_name": pkg.get("title", ""),
+                "text": summary
+            })
     except Exception as e:
         logger.error(f"Error fetching from GovInfo: {e}")
 
     return all_docs
 
 
-
 def embed_texts(texts):
     model = genai.EmbeddingModel("gemini-embedding-exp")
     resp = model.get_embeddings(texts)
-    embeddings = [e.embedding for e in resp]  
+    embeddings = [e.embedding for e in resp]
     return embeddings
 
 
@@ -123,6 +155,7 @@ def build_faiss_index(docs, index_path="data/faiss_index.index"):
     for i, vec in enumerate(embeddings):
         index.add(np.array([vec], dtype="float32"))
         idx_to_meta.append(docs[i])
+    os.makedirs(os.path.dirname(index_path), exist_ok=True)
     faiss.write_index(index, index_path)
     with open(index_path + ".meta", "w") as f:
         json.dump(idx_to_meta, f)

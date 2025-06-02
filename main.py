@@ -30,8 +30,8 @@ if user_input:
     query = parse_query(user_input)
     logger.info(f"Parsed Query: {query}")
 
-    # 2. Fetch from all configured sources (CourtListener, CAP, GovInfo, etc.)
-    docs = retrieve_legal_documents(query, year=query.get("year"))
+    
+    docs = retrieve_legal_documents(query, year=query.get("year"))                            # 2. Fetch from all configured sources (CourtListener, CAP, GovInfo, etc.)
     logger.info(f"Fetched {len(docs)} document(s) from all sources")
 
 

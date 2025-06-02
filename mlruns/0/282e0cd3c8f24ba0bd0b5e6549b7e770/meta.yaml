@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/282e0cd3c8f24ba0bd0b5e6549b7e770/artifacts
+end_time: 1748861966406
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 282e0cd3c8f24ba0bd0b5e6549b7e770
+run_name: overjoyed-yak-549
+run_uuid: 282e0cd3c8f24ba0bd0b5e6549b7e770
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748861966305
+status: 3
+tags: []
+user_id: dhruv
