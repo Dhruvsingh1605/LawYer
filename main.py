@@ -12,7 +12,7 @@ logger = setup_logger()
 
 st.set_page_config(page_title="LegalBot", page_icon="⚖️")
 
-st.title("⚖️ LegalBot")
+st.title("⚖️ LawYerBot: Your Legal Assistant")
 st.markdown(
     """
     Ask any legal question (e.g. “Recent Supreme Court rulings on environmental law”).  
