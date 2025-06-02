@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/5c5b3752f03c4b458d5080df0ec91684/artifacts
+end_time: 1748864381524
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5c5b3752f03c4b458d5080df0ec91684
+run_name: treasured-loon-329
+run_uuid: 5c5b3752f03c4b458d5080df0ec91684
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748864381341
+status: 3
+tags: []
+user_id: dhruv

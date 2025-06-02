@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 
 def fetch_cases_from_courtlistener(query, year=None, max_results=5):
-    token = os.getenv("COURTLISTENER_API_KEY")
+    token = os.getenv("COURTLISTNER_API_KEY")
     if not token:
         raise RuntimeError("COURTLISTENER_API_KEY is not set in your environment.")
     base_url = "https://www.courtlistener.com/api/rest/v3/opinions/"

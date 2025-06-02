@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/26f1a37108744e148e8dc9c58e8e534a/artifacts
+end_time: 1748864774858
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 26f1a37108744e148e8dc9c58e8e534a
+run_name: merciful-ram-185
+run_uuid: 26f1a37108744e148e8dc9c58e8e534a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748864774800
+status: 3
+tags: []
+user_id: dhruv
