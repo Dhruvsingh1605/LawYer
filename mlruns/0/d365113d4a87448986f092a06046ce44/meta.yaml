@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/d365113d4a87448986f092a06046ce44/artifacts
+end_time: 1748859928509
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d365113d4a87448986f092a06046ce44
+run_name: unruly-boar-271
+run_uuid: d365113d4a87448986f092a06046ce44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748859928454
+status: 3
+tags: []
+user_id: dhruv

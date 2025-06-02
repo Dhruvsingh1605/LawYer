@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/f1b6c0477bee421abcc93165a16118a2/artifacts
+end_time: 1748859624778
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f1b6c0477bee421abcc93165a16118a2
+run_name: invincible-croc-611
+run_uuid: f1b6c0477bee421abcc93165a16118a2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748859624737
+status: 3
+tags: []
+user_id: dhruv

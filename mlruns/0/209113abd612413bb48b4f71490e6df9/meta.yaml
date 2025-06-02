@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/209113abd612413bb48b4f71490e6df9/artifacts
+end_time: 1748859234026
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 209113abd612413bb48b4f71490e6df9
+run_name: charming-snail-693
+run_uuid: 209113abd612413bb48b4f71490e6df9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748859233974
+status: 3
+tags: []
+user_id: dhruv
