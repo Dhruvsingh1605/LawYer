@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/0dc247277c2f4d3ba1718cc0407e7470/artifacts
+end_time: 1748857807243
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0dc247277c2f4d3ba1718cc0407e7470
+run_name: chill-snipe-920
+run_uuid: 0dc247277c2f4d3ba1718cc0407e7470
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748857807041
+status: 3
+tags: []
+user_id: dhruv

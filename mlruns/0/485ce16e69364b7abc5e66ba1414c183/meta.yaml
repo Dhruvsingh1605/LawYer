@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/485ce16e69364b7abc5e66ba1414c183/artifacts
+end_time: 1748857585860
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 485ce16e69364b7abc5e66ba1414c183
+run_name: resilient-fly-383
+run_uuid: 485ce16e69364b7abc5e66ba1414c183
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748857585799
+status: 3
+tags: []
+user_id: dhruv

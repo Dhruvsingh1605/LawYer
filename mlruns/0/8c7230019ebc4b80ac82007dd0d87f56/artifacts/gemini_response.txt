@@ -1,0 +1,9 @@
+Section 133 of the Indian Evidence Act deals with **the exclusion of evidence irrelevant to the matter in issue**.  It essentially states that any fact not relevant to the issue, and collateral to it, should not be admitted as evidence.  The section emphasizes that the court's focus should remain on facts directly pertinent to the case and not be sidetracked by extraneous matters.
+
+The key aspects of Section 133 are:
+
+* **Relevance is paramount:**  The section underscores that only facts relevant to the suit or proceeding are admissible.  Relevance is determined based on the specific issues in contention.
+* **Exclusion of collateral facts:** Facts that are indirectly connected or only tangentially related to the main issue (collateral facts) are generally excluded. This is to maintain efficiency and prevent the trial from becoming unnecessarily protracted.
+* **Judge's discretion:** The judge has the power to exclude evidence, even if technically admissible, if it's deemed irrelevant or would cause undue delay or confusion.  This discretion is crucial in managing the flow of evidence in a trial.
+
+In essence, Section 133 acts as a gatekeeper, ensuring that only relevant and material evidence is considered in determining the facts of a case.  The interpretation of relevance can be nuanced and depends heavily on the specific context of the case.  Without specific cases, it's impossible to elaborate further on how this section has been interpreted in different judicial decisions.  Providing case details would allow for a more precise and informed explanation of how Section 133 is applied in practice.

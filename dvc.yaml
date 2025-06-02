@@ -1,0 +1,15 @@
+stages:
+  fetch:
+    cmd: python pipeline/fetch_cases.py
+    deps:
+      - pipeline/fetch_cases.py
+    outs:
+      - data/raw/
+
+  preprocess:
+    cmd: python pipeline/preprocess.py
+    deps:
+      - data/raw/
+      - pipeline/preprocess.py
+    outs:
+      - data/clean/

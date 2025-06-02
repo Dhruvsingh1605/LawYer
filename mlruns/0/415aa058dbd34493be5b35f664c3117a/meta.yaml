@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/415aa058dbd34493be5b35f664c3117a/artifacts
+end_time: 1748857534770
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 415aa058dbd34493be5b35f664c3117a
+run_name: unique-sloth-64
+run_uuid: 415aa058dbd34493be5b35f664c3117a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748857534736
+status: 3
+tags: []
+user_id: dhruv
