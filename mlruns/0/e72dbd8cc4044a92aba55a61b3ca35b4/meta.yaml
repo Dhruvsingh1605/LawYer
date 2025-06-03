@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/e72dbd8cc4044a92aba55a61b3ca35b4/artifacts
+end_time: 1748936446496
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e72dbd8cc4044a92aba55a61b3ca35b4
+run_name: righteous-hound-468
+run_uuid: e72dbd8cc4044a92aba55a61b3ca35b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748936446422
+status: 3
+tags: []
+user_id: dhruv

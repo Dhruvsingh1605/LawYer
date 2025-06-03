@@ -1,0 +1,15 @@
+artifact_uri: file:///media/dhruv/Local%20Disk/LawYer/LawYer/mlruns/0/3a81e381b6b748dd82ac466e06b25316/artifacts
+end_time: 1748936395814
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3a81e381b6b748dd82ac466e06b25316
+run_name: grandiose-grub-138
+run_uuid: 3a81e381b6b748dd82ac466e06b25316
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748936395735
+status: 3
+tags: []
+user_id: dhruv
